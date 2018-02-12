@@ -1,0 +1,60 @@
+/* Forms */
+
+.input-group-append,.input-group-prepend {
+  background: color(white);
+  color: $input-placeholder-color;
+  width: auto;
+  border: none;
+  .input-group-text{
+    background: transparent;
+    border-color: $border-color;
+    border-width: 2px;
+  }
+}
+.form-control {
+  border: 2px solid $border-color;
+  font-size: $input-font-size;
+  padding: $input-btn-padding-y .75rem;
+  line-height: 14px;
+  font-family: $TYPE-2;
+  font-weight: 500;
+  @include border-radius(4px);
+  &.form-control-lg {
+    padding: $input-btn-padding-y-lg .75rem;
+  }
+  &.form-control-sm {
+    padding: $input-btn-padding-y-sm .75rem;
+  }
+  @include input-placeholder{
+    font-family: $TYPE-2;
+    font-weight: 500;
+    color: theme-color(dark);
+  }
+}
+
+select {
+  font-family: $TYPE-2;
+  font-weight: 500;
+  &.form-control {
+    padding: .4375rem .75rem;
+  }
+}
+.form-group {
+  label {
+    font-size: $default-font-size;
+    line-height: 1;
+    vertical-align: top;
+  }
+  &.has-danger {
+    .form-control {
+      border-color: theme-color(danger);
+    }
+  }
+  .file-upload-default {
+    visibility: hidden;
+    position: absolute;
+  }
+  .file-upload-info {
+    background: transparent;
+  }
+}

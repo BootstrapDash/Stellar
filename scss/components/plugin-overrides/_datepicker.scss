@@ -1,0 +1,154 @@
+/* Datepicker */
+.datepicker {
+	padding: 0;
+
+	.datepicker.datepicker-dropdown,
+	.datepicker.datepicker-inline {
+		width: 100%;
+		max-width: 100%;
+
+		.datepicker-days {
+			padding: 0 0 12px;
+
+			table.table-condensed {
+				width: 100%;
+
+				thead {
+					tr {
+						th {
+							&.prev {
+								color: grey;
+								padding-bottom: 0.5rem;
+								padding-top: 0.5rem;
+								text-align: left;
+								background: $white;
+							}
+
+							&.datepicker-switch {
+								color: color(gray);
+								background: $white;
+								padding-bottom: 0.5rem;
+								padding-top: 0.5rem;
+								font-size: 0.875rem;
+								font-weight: 600;
+								text-align: center;
+							}
+
+							&.next {
+								color: grey;
+								padding-bottom: 0.5rem;
+								padding-top: 0.5rem;
+								text-align: right;
+								background: $white;
+							}
+
+							&.dow {
+								font-weight: 500;
+								font-variant: all-small-caps;
+								color: color(gray);
+								text-align: center;
+							}
+						}
+					}
+				}
+
+				tbody {
+					position: relative;
+					top: 13px;
+
+					td {
+						&.day {
+							font-size: 0.8rem;
+							padding: 4px 0;
+							text-align: center;
+
+							&:hover {
+								background: $white;
+							}
+
+							&.active {
+								color: #fff;
+								background: transparent;
+								position: relative;
+								z-index: 1;
+
+								&:before {
+									content: "";
+									width: 27px;
+									height: 27px;
+									background: theme-color(success);
+									@include border-radius(100%);
+									display: block;
+									margin: auto;
+									vertical-align: middle;
+									position: absolute;
+									top: -1%;
+									z-index: -1;
+									left: 0;
+									right: 0;
+								}
+							}
+
+							&.today {
+								color: #fff;
+								background: transparent;
+								position: relative;
+								z-index: 1;
+
+								&:before {
+									content: "";
+									width: 27px;
+									height: 27px;
+									background: theme-color(info);
+									@include border-radius(100%);
+									display: block;
+									margin: auto;
+									vertical-align: middle;
+									position: absolute;
+									top: -1%;
+									z-index: -1;
+									left: 0;
+									right: 0;
+								}
+							}
+						}
+
+						&.old.day {
+							color: darken(color(gray-lightest),4.5%);
+						}
+
+						&.new.day {}
+					}
+				}
+			}
+		}
+	}
+}
+
+.datepicker {
+	thead {
+		tr {
+			th {
+				&.prev {
+					color: grey;
+					padding-bottom: 0.5rem;
+					padding-top: 0.5rem;
+				}
+
+				&.datepicker-switch {
+					color: $blue;
+					padding-bottom: 0.5rem;
+					padding-top: 0.5rem;
+				}
+
+				&.next {
+					color: grey;
+					padding-bottom: 0.5rem;
+					padding-top: 0.5rem;
+				}
+
+				&.dow {}
+			}
+		}
+	}
+}

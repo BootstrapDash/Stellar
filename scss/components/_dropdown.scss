@@ -1,0 +1,12 @@
+/* Dropdowns */
+
+.dropdown-menu {
+  font-size: $default-font-size;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  .dropdown-item {
+    &:active {
+      background: initial;
+    }
+  }
+}

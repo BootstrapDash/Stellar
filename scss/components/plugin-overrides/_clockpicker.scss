@@ -1,0 +1,33 @@
+/* Clockpicker */
+
+.clockpicker-popover {
+	background-color: $border-color;
+	&.left {
+		.arrow {
+			&:after {
+				border-left-color: $border-color;
+			}
+		}
+	}
+	&.right {
+		.arrow {
+			&:after {
+				border-right-color: $border-color;
+			}
+		}
+	}
+	&.top {
+		.arrow {
+			&:after {
+				border-top-color: $border-color;
+			}
+		}
+	}
+	&.bottom {
+		.arrow {
+			&:after {
+				border-bottom-color: $white;
+			}
+		}
+	}
+}

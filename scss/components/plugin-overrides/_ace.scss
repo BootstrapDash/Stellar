@@ -1,0 +1,10 @@
+/* Ace Editor */
+
+.ace_editor {
+		margin: auto;
+		height: 300px;
+		width: 100%;
+		.ace_content{
+			font-size: $default-font-size;
+		}
+}

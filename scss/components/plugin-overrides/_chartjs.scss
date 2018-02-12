@@ -1,0 +1,35 @@
+.chartjs-legend{
+  ul{
+    list-style: none;
+    padding-left: 0;
+    @include display-flex;
+    @include align-items(center);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    li{
+      margin-right: 8%;
+      @include display-flex;
+      @include align-items(center);
+      span{
+        height: 20px;
+        width: 20px;
+        margin-right: 1rem;
+        display: inline-block;
+        font-size: $default-font-size;
+      }
+    }
+  }
+  .rtl & {
+    ul{
+      padding-right: 0;
+      li{
+        margin-right: 0;
+        margin-left: 8%;
+        span{
+          margin-right: 0;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/* Tables */
+
+.table {
+  margin-bottom: 0;
+  thead {
+    th {
+      border-top: 0;
+      border-bottom-width: 1px;
+      i{
+        margin-left: 0.325rem;
+      }
+    }
+  }
+  th,
+  td {
+    vertical-align: middle;
+    font-size: $default-font-size;
+    line-height: 1;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+    }
+    .badge {
+      margin-bottom: 0;
+    }
+  }
+  th{
+    font-family: $TYPE-2;
+    font-weight: 500;
+    color: theme-color(dark);
+  }
+  td{
+    font-family: $TYPE-1;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  &.table-borderless{
+    border: none;
+    tr,td,th{
+      border: none;
+    }
+  }
+  &.table-dark{
+    thead{
+      th{
+        color: $table-inverse-color;
+      }
+    }
+  }
+}

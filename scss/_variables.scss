@@ -1,0 +1,195 @@
+////////// COLOR SYSTEM //////////
+
+$blue: #5E50F9;
+$blue-1: #8C95FC;
+$blue-2: #A8B4FD;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #fd5356;
+$red: #df3849;
+$orange: #fd7e14;
+$yellow: #f6e84e;
+$green: #4fc04d;
+$teal: #58d8a3;
+$cyan: #17a2b8;
+$black: #000;
+$white: #ffffff;
+$white-smoke: #f2f7f8;
+$violet: #49298c;
+$darkslategray: #2e383e;
+$dodger-blue: #3498db;
+$blue-teal-gradient: $white;
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: #434a54,
+  gray-light: #aab2bd,
+  gray-lighter: #e8eff4,
+  gray-lightest: #e6e9ed,
+  gray-dark: #0f1531
+);
+$social-colors: (
+  twitter: #1da1f2,
+  facebook: #3b579d,
+  google: #dc4a38,
+  linkedin: #0177b4,
+  pinterest: #cc2127,
+  youtube: #e52d27,
+  github: #333333,
+  behance: #1769ff,
+  dribbble: #ea4c89,
+  reddit: #ff4500
+);
+$theme-colors: (
+  primary: #24d5d8,
+  secondary: #aab2bd,
+  success: #33c92e,
+  info: #6569df,
+  warning: #fed961,
+  danger: #fd3258,
+  light: #f5f7fa,
+  dark: #32323d
+);
+
+////////// COLOR SYSTEM //////////
+
+
+
+////////// TEMPLATE VARIABLES //////////
+
+$content-bg: #f3f5f7;
+$footer-bg: $content-bg;
+$footer-color: color(dark);
+$border-color: #f2f2f2;
+
+////////// TEMPLATE VARIABLES //////////
+
+
+
+////////// FONT VARIABLES //////////
+
+$TYPE-1: 'Open Sans', sans-serif;
+$TYPE-2: 'Roboto', sans-serif;
+$TYPE-3: 'Lobster', cursive;
+$default-font-size: 0.875rem;
+$text-muted: #8d9498;
+$body-color: #12131a;
+
+////////// FONT VARIABLES //////////
+
+
+
+////////// SIDEBAR VARIABLES ////////
+
+$sidebar-width-lg: 240px;
+$sidebar-width-icon: 70px;
+$sidebar-dark-bg: theme-color(dark);
+$sidebar-dark-menu-color: #aeaeae;
+$sidebar-dark-menu-active-bg: initial;
+$sidebar-dark-menu-active-color: #c0bbbb;
+$sidebar-dark-menu-hover-bg: #39363f;
+$sidebar-dark-menu-hover-color: color(white);
+$sidebar-dark-submenu-color: $sidebar-dark-menu-color;
+$sidebar-dark-submenu-hover-bg: initial;
+$sidebar-dark-submenu-hover-color: #9a94a7;
+$sidebar-category-font-size: 0.6875rem;
+$sidebar-category-color: $green;
+$sidebar-category-padding: 2.625rem 1.4rem 0.625rem;
+$sidebar-submenu-item-padding: 0.4rem 1.4rem;
+$sidebar-menu-font-size: 0.8rem;
+$sidebar-menu-padding: 0.6rem 1.4rem;
+$nav-link-height: 52px;
+$sidebar-submenu-padding: 0 0 0 4.25rem;
+$sidebar-submenu-font-size: 0.75rem;
+$sidebar-submenu-item-padding: 0.75rem 1.4rem;
+$sidebar-icon-font-size: 0.9375rem;
+$sidebar-arrow-font-size: 0.625rem;
+$sidebar-profile-bg: transparent;
+$sidebar-profile-padding: 0 1.625rem;
+
+////////// SIDEBAR VARIABLES ////////
+
+
+
+///////// NAVBAR VARIABLES ////////
+
+$navbar-height: 58px;
+$navbar-light-color: #202339;
+$navbar-font-size: 0.9375rem;
+$navbar-icon-font-size: 1.25rem;
+
+///////// NAVBAR VARIABLES ////////
+
+
+
+///////// BUTTONS VARIABLES ////////
+
+$button-fixed-width: 100px;
+$input-btn-padding-y: 0.65rem;
+$input-btn-padding-x: 0.875rem;
+$input-btn-line-height: 1;
+$input-btn-padding-y-xs: 0.5rem;
+$input-btn-padding-x-xs: 0.75rem;
+$input-btn-padding-y-sm: 0.50rem;
+$input-btn-padding-x-sm: 0.81rem;
+$input-btn-padding-y-lg: 0.94rem;
+$input-btn-padding-x-lg: 1.94rem;
+$input-btn-font-size: 0.875rem;
+$input-btn-font-size-xs: 0.625rem;
+$input-btn-font-size-sm: 0.875rem;
+$input-btn-font-size-lg: 0.875rem;
+$btn-border-raius: 0.125rem;
+$btn-border-radius-xs: 0.1875rem;
+$btn-border-radius-sm: 0.1875rem;
+$btn-border-radius-lg: 0.1875rem;
+$social-btn-padding: 10px;
+$social-btn-icon-size: 1rem;
+
+///////// BUTTONS VARIABLES ////////
+
+
+
+/////////  FORMS VARIABLES /////////
+
+$input-bg: color(white);
+$input-border-radius: 2px;
+$input-placeholder-color: #c9c8c8;
+$input-font-size: 0.75rem;
+
+/////////  FORMS VARIABLES /////////
+
+
+
+//////// TABLES VARIABLES ////////
+
+$table-accent-bg: $content-bg;
+$table-hover-bg: $content-bg;
+$table-cell-padding: 15px;
+$table-border-color: $border-color;
+$table-inverse-bg: theme-color(dark);
+$table-inverse-color: color(white);
+
+//////// TABLES VARIABLES ////////
+
+
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////
+
+$border-property: 1px solid $border-color;
+$card-spacing-y: 1.5rem;
+$card-padding-y: 1.5rem;
+$card-padding-x: 0.9375rem;
+$grid-gutter-width: 20px;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////

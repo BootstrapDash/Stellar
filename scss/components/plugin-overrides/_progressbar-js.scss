@@ -1,0 +1,12 @@
+/* Progressbar-js */
+
+.ui-progress {
+  border-radius: 50px;
+  svg {
+    background: $border-color;
+    border-radius: 50px;
+  }
+}
+.progressbar-js-circle {
+  width: 100%;
+}

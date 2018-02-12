@@ -1,0 +1,101 @@
+/* Typography */
+body {
+  font-size: 1rem;
+  font-family: $TYPE-1;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: $default-font-size;
+}
+
+.display-1 {
+  @media (max-width: 991px) {
+    font-size: 4rem;
+  }
+}
+
+.display-2 {
+  @media (max-width: 991px) {
+    font-size: 3.5rem;
+  }
+}
+
+.display-3 {
+  @media (max-width: 991px) {
+    font-size: 3rem;
+  }
+}
+
+.display-4 {
+  @media (max-width: 991px) {
+    font-size: 2.5rem;
+  }
+}
+
+.card-title {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-family: $TYPE-2;
+  margin-bottom: 1.65rem;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+.icon-sm{
+  font-size: 16px;
+}
+.icon-md{
+  font-size: 25px;
+}
+.icon-lg{
+  font-size: 40px;
+}
+
+.card-description {
+  font-size: $default-font-size;
+  color: #585858;
+}

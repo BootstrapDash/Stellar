@@ -1,0 +1,86 @@
+/* Accordions */
+
+.accordion {
+  .card {
+    margin-bottom: 10px;
+    border: 1px solid $border-color;
+    .card-header {
+      background-color: transparent;
+      border: none;
+      padding:0;
+      font-size: 14px;
+      background: $accordion-header-bg;
+      a {
+        display: block;
+        padding:.75rem 1.70rem .75rem 1.25rem;
+        color: theme-color(dark);
+        text-decoration: none;
+        font-size: inherit;
+        position: relative;
+        @include transition-duration(0.5s);
+        font-family: $TYPE-2;
+        font-weight: 500;
+        transition-property: border-color ,background;
+        -webkit-transition-property: border-color, background;
+        &:before{
+          font-family:"Material Design Icons";
+          position: absolute;
+          right: 7px;
+          top: 10px;
+          font-size: 1rem;
+          display: block;
+          color: $black;
+        }
+        &[aria-expanded="true"]{
+          &:before{
+            content: "\F374";
+          }
+        }
+        &[aria-expanded="false"]{
+          &:before{
+            content: "\F415";
+          }
+          &:hover{
+            background: darken($accordion-header-bg,5%);
+          }
+        }
+      }
+      &.bg-success,&.bg-warning,&.bg-danger,&.bg-primary,&.bg-dark{
+        a{
+          color: $white;
+          &:before{
+            color: $white;
+          }
+        }
+      }
+    }
+    .card-body {
+      font-size: 0.88rem;
+      padding:12px 20px 26px 20px;
+      background: $accordion-header-bg;
+      i {
+        font-size: 1.25rem;
+      }
+    }
+    &.bg-success,&.bg-danger,&.bg-primary,&.bg-info,&.bg-warning,&.bg-dark{
+      color: $white;
+      .card-header{
+        color: $white;
+        border:none;
+        &:before{
+          color: $white;
+        }
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+/* inverse buttons */
+@each $color, $value in $theme-colors {
+  .accordion-inverse-#{$color} {
+    @include accordion-inverse-variant($value);
+  }
+}

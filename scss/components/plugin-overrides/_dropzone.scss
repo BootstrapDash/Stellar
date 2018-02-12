@@ -1,0 +1,14 @@
+/* Dropzone */
+
+.dropzone {
+  border: 1px solid $border-color;
+  height: 200px;
+  .dz-message {
+    text-align: center;
+    width: 100%;
+    span {
+      font-size: .8125rem;
+      color: $body-color;
+    }
+  }
+}
