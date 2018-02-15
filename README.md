@@ -1,11 +1,9 @@
 <a href="http://www.bootstrapdash.com/demo/stellar-admin-free/jquery/" target="_blank"><img src="screenshot.jpg"></a>
 
 <h1>Stellar</h1>
-Stellar is a free responsive admin template built with Bootstrap 4. The template has colorful, attractive yet simple and elegant design. The template is well crafted, with all the components neatly and carefully designed and arranged within the template.
-
-Stellar is packed with all the features that fit your needs but not cramped with components you would not even use. It is an excellent fit to build admin panels, e-commerce systems,  project management systems, CMS or CRM.
-
-Although the template has a design like none other, it is easily customizable to suit your requirements. Stellar comes with a clean and well-commented code that makes it easy to work with the template. Thus making it an ideal pick for jump starting your project.
+Stellar admin template is completely based on the latest version of Bootstrap 4. Stellar Admin is designed to reflect the simplicity and svelte of the components and UI elements and coded to perfection with well-organized code. This makes it easy to change its looks to anything that you desire on your admin panel. Stellar Admin is a perfect pick to create any kind of simple or complex backend applications or any other web applications.
+<br><br>
+The template is always kept up to date and kept up with the latest technologies. Stellar is a completely responsive admin template that gives you an effortless viewing experience on mobile devices as well as small and large desktops.
 
 
 <h1>Credits:</h1>
@@ -31,7 +29,7 @@ Stellar is designed to work flawlessly with all the latest and modern web browse
 
 Stellar is released under MIT license. Stellar is a free Bootstrap 4 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
 
-<h1>How to use Stellar?</h1>
+<h1>How to use Stellar ?</h1>
 
 
 1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/Stellar.git in you terminal to get a copy of this template.
