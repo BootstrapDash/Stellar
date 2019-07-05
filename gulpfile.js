@@ -3,13 +3,11 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var rename = require('gulp-rename');
-var del = require('del');
-var runSequence = require('run-sequence');
 var replace = require('gulp-replace');
 var injectPartials = require('gulp-inject-partials');
 var inject = require('gulp-inject');
 var sourcemaps = require('gulp-sourcemaps');
+var merge = require('merge-stream');
 
 gulp.paths = {
   dist: 'dist',
@@ -19,8 +17,19 @@ var paths = gulp.paths;
 
 
 
+
+gulp.task('sass', function() {
+  return gulp.src('./scss/style.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
+});
+
+
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', gulp.series('sass', function() {
 
   browserSync.init({
     port: 3000,
@@ -29,11 +38,11 @@ gulp.task('serve', ['sass'], function() {
     notify: false
   });
 
-  gulp.watch('scss/**/*.scss', ['sass']);
+  gulp.watch('scss/**/*.scss', gulp.series('sass'));
   gulp.watch('**/*.html').on('change', browserSync.reload);
   gulp.watch('js/**/*.js').on('change', browserSync.reload);
 
-});
+}));
 
 
 
@@ -54,25 +63,8 @@ gulp.task('serve:lite', function() {
 
 
 
-gulp.task('sass', function() {
-  return gulp.src('./scss/style.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./css'))
-    .pipe(browserSync.stream());
-});
-
-
-
 gulp.task('sass:watch', function() {
   gulp.watch('./scss/**/*.scss');
-});
-
-
-/*sequence for injecting partials and replacing paths*/
-gulp.task('inject', function() {
-  runSequence('injectPartial', 'injectAssets', 'replacePath');
 });
 
 
@@ -109,22 +101,24 @@ gulp.task('injectAssets', function() {
 
 /*replace image path and linking after injection*/
 gulp.task('replacePath', function() {
-  gulp.src('pages/*/*.html', {
+  var replacePath1 = gulp.src('pages/*/*.html', {
       base: "./"
     })
     .pipe(replace('src="images/', 'src="../../images/'))
     .pipe(replace('href="pages/', 'href="../../pages/'))
     .pipe(replace('href="index.html"', 'href="../../index.html"'))
     .pipe(gulp.dest('.'));
-  gulp.src('pages/*.html', {
+  var replacePath2 = gulp.src('pages/*.html', {
       base: "./"
     })
     .pipe(replace('src="images/', 'src="../images/'))
     .pipe(replace('"pages/', '"../pages/'))
     .pipe(replace('href="index.html"', 'href="../index.html"'))
     .pipe(gulp.dest('.'));
+  return merge(replacePath1, replacePath2);
 });
 
+/*sequence for injecting partials and replacing paths*/
+gulp.task('inject', gulp.series('injectPartial', 'injectAssets', 'replacePath'));
 
-
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.series('serve'));
