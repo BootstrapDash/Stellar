@@ -1,0 +1,297 @@
+////////// COLOR SYSTEM //////////
+
+$blue: #5E50F9;
+$indigo: #6610f2;
+$purple: #6a008a;
+$pink: #E91E63;
+$red: #f96868;
+$orange: #f2a654;
+$yellow: #f6e84e;
+$green: #46c35f;
+$teal: #58d8a3;
+$cyan: #57c7d4;
+$black: #000;
+$white: #ffffff;
+$white-smoke: #f2f7f8;
+$violet: #41478a;
+$darkslategray : #2e383e;
+$dodger-blue : #3498db;
+
+
+$colors: (blue: $blue,
+indigo: $indigo,
+purple: $purple,
+pink: $pink,
+red: $red,
+orange: $orange,
+yellow: $yellow,
+green: $green,
+teal: $teal,
+cyan: $cyan,
+white: $white,
+gray: #434a54,
+gray-light: #aab2bd,
+gray-lighter: #e8eff4,
+gray-lightest: #e6e9ed,
+gray-dark: #0f1531,
+black: #000000);
+
+
+$theme-colors: (primary: #1bdbe0,
+secondary: #d8d8d8,
+success: #38ce3c,
+info: #8e32e9,
+warning: #ffde73,
+danger: #ff4d6b,
+light: #f8f9fa,
+dark: #3e4b5b);
+
+
+////////// COLOR SYSTEM //////////
+
+////////// COLOR VARIABLES //////////
+$content-bg: #ecf0f4;
+$footer-bg: $content-bg;
+$footer-color: color(dark);
+$border-color: #e8ecf1;
+////////// COLOR VARIABLES //////////
+
+////////// SOCIAL COLORS //////////
+
+$social-colors: (twitter: #2caae1,
+facebook: #3b579d,
+google: #dc4a38,
+linkedin: #0177b5,
+pinterest: #cc2127,
+youtube: #e52d27,
+github: #333333,
+behance: #1769ff,
+dribbble: #ea4c89,
+reddit: #ff4500);
+
+////////// SOCIAL COLORS //////////
+
+////////// FONTS//
+
+$type1: 'Open Sans',
+sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 600;
+$font-weight-semibold: 700;
+
+$default-font-size: .875rem; // 14px as base font size
+
+$text-muted: #9c9fa6;
+$body-color: #343a40;
+
+////////// FONT VARIABLES //////////
+
+///////// CARD ////////
+$card-bg: #fff;
+$card-description-color: #76838f;
+$card-title-color: $body-color;
+///////// CARD ////////
+
+//////// TABLES ////////
+$table-accent-bg: $content-bg;
+$table-hover-bg: $content-bg;
+$table-cell-padding: .9375rem;
+$table-border-color: $border-color;
+$table-inverse-bg: #2a2b32;
+$table-inverse-color: color(white);
+//////// TABLES ////////
+
+////////// MODALS VARIABLES //////////
+$modal-content-bg: $content-bg;
+////////// MODALS VARIABLES //////////
+
+///////// NAVBAR ////////
+$navbar-bg: #fff;
+$navbar-height: 70px;
+$navbar-menu-color: #111111;
+$navbar-menu-icon-color: #626262;
+
+$navbar-font-size: .875rem;
+$navbar-icon-font-size: 1.25rem;
+
+///////// NAVBAR ////////
+
+
+
+///////// BUTTONS ////////
+
+$button-fixed-width: 150px;
+$btn-padding-y: .875rem;
+$btn-padding-x: 2.5rem;
+$btn-line-height: 1;
+
+$btn-padding-y-xs: .5rem;
+$btn-padding-x-xs: .75rem;
+
+$btn-padding-y-sm: .50rem;
+$btn-padding-x-sm: .81rem;
+
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 3rem;
+
+$btn-font-size: .875rem;
+$btn-font-size-xs: .625rem;
+$btn-font-size-sm: .875rem;
+$btn-font-size-lg: .875rem;
+
+$btn-border-radius: .1875rem;
+$btn-border-radius-xs: .1875rem;
+$btn-border-radius-sm: .1875rem;
+$btn-border-radius-lg: .1875rem;
+
+///////// BUTTONS ////////
+
+
+
+////////// TOOLTIP VARIABLES //////////
+
+//default styles
+$tooltip-font-size: .75rem;
+$tooltip-padding-y: .4rem;
+$tooltip-padding-x: .75rem;
+$tooltip-border-radius: .375rem;
+
+////////// TOOLTIP VARIABLES //////////
+
+
+
+/////////  FORMS /////////
+
+$input-bg: color(white);
+$input-border-radius: 2px;
+$input-placeholder-color: #c9c8c8;
+$input-font-size: .8125rem;
+
+$input-padding-y: 0.94rem;
+$input-padding-x: 1.375rem;
+$input-line-height: 1;
+
+$input-padding-y-xs: .5rem;
+$input-padding-x-xs: .75rem;
+
+$input-padding-y-sm: .50rem;
+$input-padding-x-sm: .81rem;
+
+$input-padding-y-lg: .94rem;
+$input-padding-x-lg: 1.94rem;
+
+$input-height:          2.875rem;
+$input-height-sm:       2.575rem;
+$input-height-lg:       3.175rem;
+
+///////// FORMS /////////
+
+////////  DROPDOWNS ///////
+$dropdown-border-color: $border-color;
+$dropdown-divider-bg: $border-color;
+$dropdown-link-color: $body-color;
+$dropdown-header-color: $body-color;
+$dropdown-menu-box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+////////  DROPDOWNS ///////
+
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////
+
+$boxed-container-width: 1200px;
+$border-property: 1px solid $border-color;
+$card-spacing-y: 25px;
+$card-padding-y: 1.875rem;
+$card-padding-x: 1.875rem;
+$card-border-radius: 0;
+$grid-gutter-width: 20px;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+////////// OTHER VARIABLES //////////
+
+
+
+////////// BREAD CRUMBS VARIABLES //////////
+
+// default styles
+$breadcrumb-padding-y: 0.56rem;
+$breadcrumb-padding-x: 1.13rem;
+$breadcrumb-item-padding: .5rem;
+$breadcrumb-margin-bottom: 1rem;
+$breadcrumb-font-size: $default-font-size;
+$breadcrumb-bg: transparent;
+$breadcrumb-border-color: $border-color;
+$breadcrumb-divider-color: $gray-600;
+$breadcrumb-active-color: $gray-700;
+$breadcrumb-divider: "/";
+
+// custom styles
+$breadcrumb-custom-padding-y: 0;
+$breadcrumb-custom-padding-x: 0;
+$breadcrumb-custom-item-padding-y: 0.56rem;
+$breadcrumb-custom-item-padding-x: 10px;
+$breadcrumb-custom-item-color: $black;
+$breadcrumb-item-bg: #dbe3e6;
+////////// BREAD CRUMBS VARIABLES //////////
+
+
+////////// MODALS VARIABLES //////////
+$modal-inner-padding: 15px;
+$modal-dialog-margin: 10px;
+$modal-dialog-margin-y-sm-up: 30px;
+$modal-title-line-height: $line-height-base;
+$modal-content-box-shadow-xs: 0 3px 9px rgba($black, .5);
+$modal-content-box-shadow-sm-up: 0 5px 15px rgba($black, .5);
+
+$modal-backdrop-bg: $black;
+$modal-backdrop-opacity: .5;
+
+$modal-header-border-color: $border-color;
+$modal-content-border-color: $border-color;
+$modal-footer-border-color: $border-color;
+
+$modal-header-border-width: $border-width;
+$modal-content-border-width: $border-width;
+$modal-footer-border-width: $border-width;
+
+$modal-header-padding-x: 26px;
+$modal-header-padding-y: 25px;
+
+$modal-body-padding-x: 26px;
+$modal-body-padding-y: 35px;
+
+$modal-footer-padding-x: 31px;
+$modal-footer-padding-y: 15px;
+
+$modal-lg: 90%;
+$modal-md: 500px;
+$modal-sm: 300px;
+$modal-transition: transform .4s ease;
+
+////////// MODALS VARIABLES //////////
+
+/////////  TABS VARIABLES //////////
+$nav-tabs-border-color: #ebedf2;
+$nav-tabs-link-bg: #f6f8fa;
+$nav-tabs-link-color: #000000;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-border-color;
+$nav-tabs-link-active-color: $body-color;
+$nav-tabs-link-active-bg: $white;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-link-active-bg;
+$nav-pills-custom-bg: #fcfcfd;
+////////   TABS VARIABLES /////////
+
+
+///////// SETTINGS PANEL ////////
+$settings-panel-width: 300px;
+///////// SETTINGS PANEL ////////
+
+
+////////   CALENDAR  //////////////
+$fullcalendar-color: #a8b2b9;
+////////   CALENDAR  //////////////
+
+////////   MISC  //////////////
+$page-title-color: $body-color;
+////////   MISC  //////////////

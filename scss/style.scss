@@ -1,12 +1,3 @@
-/*------------------------------------------------------------------
- [Master Stylesheet]
-
-  Project:	Stellar Admin [ FREE VERSION ]
-  Version:	1.0
--------------------------------------------------------------------*/
-
-
-
 /*-------------------------------------------------------------------
   ===== Table of Contents =====
 
@@ -17,42 +8,98 @@
   * Template mixins
     + Animation Mixins
     + Background Mixins
-    + Badges Mixins
-    + BlockQuote Mixins
-    + Buttons Mixins
+    + Badge Mixins
+    + Button Mixins
     + Miscellaneous Mixins
-    + Paginations
+    + BlockQuote Mixins
+    + Cards Mixins
+    + Color Functions Mixins
+    + Tooltips
+    + popovers
   * Core Styles
     + Reset Styles
     + Fonts
     + Functions
-    + Sidebar
-    + Navbar
+    + Backgrounds
     + Typography
     + Miscellaneous
     + Footer
     + Layouts
     + Utilities
     + Demo styles
-    + Dashboard
   * Components
+    + Accordions
     + Badges
+    + Bootstrap Alerts
+    + Boostrap Progress
     + Buttons
+    + Breadcrumbs
     + Cards
     + Checkboxes and Radios
+    + Dropdowns
     + Forms
+    + Google maps
     + Icons
+    + Loaders
     + Lists
+    + Modals
     + Pagination
+    + Popover
     + Preview
-    + Pricing Table
     + Tables
-    + Flot Chart
+    + Tabs
+    + Timeline
+    + Todo List
+    + Tooltips
+    + User Profile
+    + Pricing table
+  * Email
+    + Mail Sidebar
+    + Mail List Container
+    + Message Content
+  * Plugin Overrides
+    + Ace Editor
+    + Avgrund Popup
+    + Bootstrap Tour
+    + Chartist
+    + CodeMirror
+    + Colcade
+    + Colorpicker
+    + Context Menu
+    + Data Tables
+    + Datepicker
+    + Dropify
+    + Dropzone
+    + Flot chart
+    + Full Calendar
+    + Google Charts
+    + Icheck
+    + Jquery File Upload
+    + Js-grid
+    + Jvectormap
+    + Light Gallery
+    + Listify
+    + No-ui-slider
+    + Owl-carousel
+    + Progressbar-js
+    + Pws-tabs
+    + Quill Editor
+    + Rating
+    + Select2
+    + Summernote Editor
+    + SweetAlert
+    + Switchery
+    + Tags
+    + TinyMCE Editor
+    + Toast
+    + Typeahead
+    + Wysi Editor
+    + X-editable
+    + Wizard
   * Landing screens
     + Auth
-    + Error
+    + Lock Screen
 -------------------------------------------------------------------*/
-
 
 /*-------------------------------------------------------------------*/
 /* === Import Bootstrap functions and variables === */
@@ -61,7 +108,8 @@
 
 /*-------------------------------------------------------------------*/
 /* === Import template variables === */
-@import "variables";
+@import "./light/variables";
+@import 'variables';
 
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
@@ -74,44 +122,50 @@
 
 /*-------------------------------------------------------------------*/
 /* === Template mixins === */
-@import "mixins/animation";
-@import "mixins/background";
-@import "mixins/badge";
-@import "mixins/buttons";
-@import "mixins/misc";
-@import "mixins/blockqoute";
-@import "mixins/pagination";
+@import "./shared/mixins/misc";
+@import "./shared/mixins/animation";
+@import "./shared/mixins/blockqoute";
+@import "./shared/mixins/buttons";
+@import "./shared/mixins/cards";
+@import "./shared/mixins/pagination";
 
 /*-------------------------------------------------------------------*/
 /* === Core Styles === */
-@import "reset";
-@import "fonts";
-@import "functions";
-@import "sidebar";
-@import "navbar";
-@import "typography";
-@import "misc";
-@import "footer";
-@import "utilities";
-@import "demo";
-@import "dashboard";
+@import "./shared/reset";
+@import "./shared/fonts";
+@import "./shared/functions";
+@import "./shared/typography";
+@import "./shared/misc";
+@import "./shared/footer";
+@import "./shared/utilities";
+@import "./shared/demo";
 
 /*-------------------------------------------------------------------*/
 /* === Components === */
-@import "components/badges";
-@import "components/bootstrap-progress";
-@import "components/buttons";
-@import "components/cards";
-@import "components/checkbox-radio";
-@import "components/forms";
-@import "components/icons";
-@import "components/lists";
-@import "components/pagination";
-@import "components/preview";
-@import "components/tables";
-@import "plugin-overrides/flot-chart";
+@import "./shared/components/buttons";
+@import "./shared/components/cards";
+@import "./shared/components/checkbox-radio";
+@import "./shared/components/dropdown";
+@import "./shared/components/forms";
+@import "./shared/components/icons";
+@import "./shared/components/lists";
+@import "./shared/components/modals";
+@import "./shared/components/pagination";
+@import "./shared/components/tables";
+@import "./shared/components/preview";
+
+/*-------------------------------------------------------------------*/
+/* === Plugin overrides === */
+@import "./light/components/plugin-overrides/chartist";
+@import "./light/components/plugin-overrides/select2";
+@import "./light/components/plugin-overrides/typeahead";
 
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
-@import "landing-screens/auth";
-@import "landing-screens/error";
+@import "./shared/landing-screens/auth";
+
+@import 'navbar';
+@import 'sidebar';
+//@import './layouts';
+@import './vertical/vertical-wrapper';
+@import 'dashboard';

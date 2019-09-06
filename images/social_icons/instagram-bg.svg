@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="156px" viewBox="0 0 375 156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="27.9442579%" y1="44.8626005%" x2="100%" y2="57.6317046%" id="linearGradient-1">
+            <stop stop-color="#FF98EF" offset="0%"></stop>
+            <stop stop-color="#A04CFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="375" height="156"></rect>
+        <linearGradient x1="55.2658748%" y1="-5.26743841%" x2="51.4445018%" y2="75.5820061%" id="linearGradient-4">
+            <stop stop-color="#F780FF" offset="0%"></stop>
+            <stop stop-color="#706AFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="39.391271%" y2="71.9333739%" id="linearGradient-5">
+            <stop stop-color="#FF85E2" offset="0%"></stop>
+            <stop stop-color="#AB6CFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="55.9070272%" y2="77.6815053%" id="linearGradient-6">
+            <stop stop-color="#F185FF" offset="0%"></stop>
+            <stop stop-color="#6A6DFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Stellar-Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8">
+            <g id="Path">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <path d="M44.349052,-110.97387 C22.043194,-44.8592941 27.3371522,-2.78608775 60.2309265,15.2457489 C109.571588,42.293504 96.5130919,70.8357457 10.8902651,120.270108 C-74.7325618,169.70447 -67.7036222,200.392984 -45.9687883,238.038821 C-31.478899,263.136045 42.0083636,272.584223 174.493,266.383353 C218.748547,166.756565 241.09326,115.154234 241.527138,111.57636 C241.961016,107.998486 241.744077,60.4937112 240.876321,-30.9379649 L209.690536,-120.226155 L44.349052,-110.97387 Z" id="Path-2-Copy-2" fill="url(#linearGradient-4)" mask="url(#mask-3)" transform="translate(90.818479, 74.000000) rotate(-330.000000) translate(-90.818479, -74.000000) "></path>
+                <path d="M185.349052,-53.3062872 C163.043194,12.8082888 168.337152,54.8814951 201.230926,72.9133317 C250.571588,99.9610868 237.513092,128.503329 151.890265,177.937691 C66.2674382,227.372053 73.2963778,258.060567 95.0312117,295.706404 C109.521101,320.803628 183.008364,330.251806 315.493,324.050936 C359.748547,224.424148 382.09326,172.821817 382.527138,169.243943 C382.961016,165.666069 382.744077,118.161294 381.876321,26.7296179 L350.690536,-62.5585718 L185.349052,-53.3062872 Z" id="Path-2-Copy" fill="url(#linearGradient-5)" mask="url(#mask-3)" transform="translate(231.818479, 131.667583) rotate(-330.000000) translate(-231.818479, -131.667583) "></path>
+                <path d="M264.319213,35.2650251 C249.397001,79.4944724 252.938562,107.640681 274.943898,119.703652 C307.951902,137.798107 299.216006,156.892347 241.935894,189.963035 C184.655782,223.033723 189.358015,243.563781 203.898223,268.74816 C213.591695,285.537746 262.753335,291.858405 351.383144,287.710136 C380.9893,221.061629 395.937506,186.540609 396.227762,184.147076 C396.518018,181.753544 396.37289,149.973714 395.792377,88.8075881 L374.929655,29.0754151 L264.319213,35.2650251 Z" id="Path-2" fill="url(#linearGradient-6)" mask="url(#mask-3)" transform="translate(295.406414, 159.009176) rotate(-330.000000) translate(-295.406414, -159.009176) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
